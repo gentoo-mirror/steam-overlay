@@ -1,4 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -16,7 +16,7 @@ LICENSE="metapackage"
 
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="flash steamfonts +steamruntime streaming trayicon video_cards_intel video_cards_nvidia"
+IUSE="flash +pulseaudio steamfonts +steamruntime streaming trayicon video_cards_intel video_cards_nvidia"
 
 RDEPEND="
 		media-fonts/font-mutt-misc
@@ -51,66 +51,48 @@ RDEPEND="
 				>=sys-devel/gcc-4.6.0[multilib]
 				>=sys-libs/glibc-2.15[multilib]
 				>=app-emulation/steam-runtime-bin-20131109
-				=sys-fs/steam-runtime-udev-175-r2[abi_x86_32,gudev]
 
-				|| (
-					>=app-emulation/emul-linux-x86-baselibs-20121202
-					(
-						dev-libs/dbus-glib[abi_x86_32]
-						|| ( dev-libs/libgcrypt:0/11[abi_x86_32(-)] dev-libs/libgcrypt:11[abi_x86_32(-)] )
-						dev-libs/nspr[abi_x86_32]
-						dev-libs/nss[abi_x86_32]
-						net-misc/curl[abi_x86_32]
-					)
-				)
-				|| (
-					>=app-emulation/emul-linux-x86-gtklibs-20121202
-					(
-						gnome-base/gconf:2[abi_x86_32]
-						x11-libs/gtk+:2[abi_x86_32,cups]
-						x11-libs/pango[abi_x86_32]
-						x11-libs/gdk-pixbuf[abi_x86_32]
-					)
-				)
-				|| (
-					>=app-emulation/emul-linux-x86-sdl-20121202
-					(
-						media-libs/openal[abi_x86_32]
-					)
-				)
-				|| (
-					>=app-emulation/emul-linux-x86-soundlibs-20121202
-					(
-						media-libs/alsa-lib[abi_x86_32]
-						media-libs/flac[abi_x86_32]
-						media-libs/libvorbis[abi_x86_32]
-						media-sound/pulseaudio[abi_x86_32,caps]
-					)
-				)
-				|| (
-					>=app-emulation/emul-linux-x86-xlibs-20121202
-					(
-						x11-libs/libSM[abi_x86_32]
-						x11-libs/libICE[abi_x86_32]
-						x11-libs/libX11[abi_x86_32]
-						x11-libs/libXext[abi_x86_32]
-						x11-libs/libXfixes[abi_x86_32]
-						media-libs/fontconfig[abi_x86_32]
-						media-libs/freetype[abi_x86_32]
-						x11-libs/libXi[abi_x86_32]
-						x11-libs/libXinerama[abi_x86_32]
-						x11-libs/libXrandr[abi_x86_32]
-						x11-libs/libXrender[abi_x86_32]
-					)
-				)
+				dev-libs/dbus-glib[abi_x86_32]
+				|| ( dev-libs/libgcrypt:0/11[abi_x86_32(-)] dev-libs/libgcrypt:11[abi_x86_32(-)] )
+				dev-libs/nspr[abi_x86_32]
+				dev-libs/nss[abi_x86_32]
+				gnome-base/gconf:2[abi_x86_32]
+				media-libs/openal[abi_x86_32]
+				media-libs/alsa-lib[abi_x86_32]
+				media-libs/flac[abi_x86_32]
+				media-libs/libvorbis[abi_x86_32]
+				media-libs/fontconfig[abi_x86_32]
+				media-libs/freetype[abi_x86_32]
+				net-misc/curl[abi_x86_32]
+				sys-libs/libudev-compat[abi_x86_32]
+				virtual/libgudev[abi_x86_32]
+				x11-libs/gtk+:2[abi_x86_32,cups]
+				x11-libs/gdk-pixbuf[abi_x86_32]
+				x11-libs/libXi[abi_x86_32]
+				x11-libs/libXinerama[abi_x86_32]
+				x11-libs/libXrandr[abi_x86_32]
+				x11-libs/libXrender[abi_x86_32]
+				x11-libs/libSM[abi_x86_32]
+				x11-libs/libICE[abi_x86_32]
+				x11-libs/libX11[abi_x86_32]
+				x11-libs/libXext[abi_x86_32]
+				x11-libs/libXfixes[abi_x86_32]
+				x11-libs/libXScrnSaver[abi_x86_32]
+				x11-libs/pango[abi_x86_32]
 
 				streaming? ( x11-libs/libva[abi_x86_32] )
-				trayicon? ( dev-libs/libappindicator:2[abi_x86_32] )
+				trayicon? ( || (
+					dev-libs/libappindicator:2[abi_x86_32]
+					dev-libs/libappindicator2[abi_x86_32]
+					) )
+				pulseaudio? ( media-sound/pulseaudio[abi_x86_32,caps] )
+				!pulseaudio? ( media-sound/apulse[abi_x86_32] )
 				)
 			x86? (
 				dev-libs/glib:2
 				dev-libs/dbus-glib
 				|| ( dev-libs/libgcrypt:0/11 dev-libs/libgcrypt:11 )
+				virtual/libgudev
 				virtual/libusb
 				dev-libs/nspr
 				dev-libs/nss
@@ -119,11 +101,10 @@ RDEPEND="
 				media-libs/freetype:2
 				media-libs/libpng:1.2
 				media-libs/openal
-				media-sound/pulseaudio
 				net-misc/networkmanager
 				net-print/cups
 				sys-apps/dbus
-				=sys-fs/steam-runtime-udev-175[gudev]
+				sys-libs/libudev-compat
 				>=sys-devel/gcc-4.6.0
 				>=sys-libs/glibc-2.15
 				>=sys-libs/zlib-1.2.4
@@ -139,10 +120,16 @@ RDEPEND="
 				x11-libs/libXinerama
 				x11-libs/libXrandr
 				x11-libs/libXrender
+				x11-libs/libXScrnSaver
 				x11-libs/pango
 
 				streaming? ( x11-libs/libva )
-				trayicon? ( dev-libs/libappindicator:2 )
+				trayicon? ( || (
+					dev-libs/libappindicator:2
+					dev-libs/libappindicator2
+					) )
+				pulseaudio? ( media-sound/pulseaudio[caps] )
+				!pulseaudio? ( media-sound/apulse )
 				)
 			)
 		"
@@ -162,6 +149,16 @@ pkg_postinst() {
 		elog "If you're using PAX, please see:"
 		elog "http://wiki.gentoo.org/wiki/Steam#Hardened_Gentoo"
 		elog ""
+	fi
+
+	if ! use pulseaudio; then
+		ewarn "You have disabled pulseaudio which is not supported."
+		ewarn "You have to use media-sound/apulse instead to start"
+		ewarn "steam. Please add '/usr/lib32/apulse' to your"
+		ewarn "LD_LIBRARY_PATH environment variable or start steam"
+		ewarn "with:"
+		ewarn "# LD_LIBRARY_PATH=/usr/lib32/apulse steam"
+		ewarn ""
 	fi
 
 	ewarn "The steam client and the games are not controlled by"
