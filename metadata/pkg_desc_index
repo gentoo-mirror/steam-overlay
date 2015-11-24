@@ -1,9 +1,9 @@
 dev-libs/steam-runtime-openssl 1.0.1p: OpenSSL for Steam-based games
-dev-util/adobe-air-runtime 2.6 2.6-r1: 
-games-util/steam-client-meta 0-r20150828: 
-games-util/steam-games-meta 0-r20140325 0-r20141109: 
-games-util/steam-launcher 1.0.0.49-r3 1.0.0.49-r4 1.0.0.49-r5 1.0.0.50: 
-games-util/steam-meta 0-r20131107: 
+dev-util/adobe-air-runtime 2.6 2.6-r1: Adobe AIR runtime
+games-util/steam-client-meta 0-r20150828: Meta package for Valve's native Steam client
+games-util/steam-games-meta 0-r20140325 0-r20141109: Meta package for Steam games
+games-util/steam-launcher 1.0.0.49-r3 1.0.0.49-r4 1.0.0.49-r5 1.0.0.50: Installer, launcher and supplementary files for Valve's Steam client
+games-util/steam-meta 0-r20131107: Meta package for Valve's Steam environment
 media-fonts/steamfonts 1: Collection of fonts used by Valve's Steam client
-media-libs/steam-runtime-glew 1.6.0 1.6.0-r1: 
+media-libs/steam-runtime-glew 1.6.0 1.6.0-r1: The OpenGL Extension Wrangler Library
 net-misc/steam-runtime-curl 7.23.1-r1: A Client that groks URLs
