@@ -18,6 +18,7 @@ games-util/steam-games-meta:steamgames_journey_down - The journy down
 games-util/steam-games-meta:steamgames_narcissu - Narcissu 1st and 2nd
 games-util/steam-games-meta:steamgames_painkiller - Painkiller Hell & Damnation
 games-util/steam-games-meta:steamgames_portal - Portal
+games-util/steam-games-meta:steamgames_shadow_mordor - Middle earth: Shadow of Mordor
 games-util/steam-games-meta:steamgames_shatter - Sidhe's Shatter
 games-util/steam-games-meta:steamgames_source_engine - Games based on Valve's source engine (CSS,TF2,...)
 games-util/steam-games-meta:steamgames_tf2 - Team Fortress 2
