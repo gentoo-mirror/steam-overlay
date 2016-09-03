@@ -70,7 +70,7 @@ LIBS[libglut.so.3]=media-libs/freeglut[@ABI@]
 LIBS[libgmodule-2.0.so.0]=dev-libs/glib:2[@ABI@]
 LIBS[libgmp.so.10]=dev-libs/gmp:0/10.4[@ABI@]
 LIBS[libgobject-2.0.so.0]=dev-libs/glib:2[@ABI@]
-LIBS[libgomp.so.1]=${GLIBC}[@MULTILIB@,openmp]
+LIBS[libgomp.so.1]=${GCC}[@MULTILIB@,openmp]
 LIBS[libgpg-error.so.0]=dev-libs/libgpg-error[@ABI@]
 LIBS[libgssapi.so.3]=app-crypt/heimdal[@ABI@]
 LIBS[libgssapi_krb5.so.2]=app-crypt/mit-krb5[@ABI@]
@@ -204,8 +204,8 @@ LIBS[libtiff.so.5]=media-libs/tiff:0[@ABI@]
 LIBS[libtiffxx.so.3]=media-libs/tiff:3[@ABI@,cxx]
 LIBS[libtiffxx.so.4]=media-libs/tiff:3[@ABI@,cxx]
 LIBS[libtiffxx.so.5]=media-libs/tiff:0[@ABI@,cxx]
-LIBS[libtinfo.so.5]=sys-libs/ncurses:5/5[@ABI@]
-LIBS[libtinfo.so.6]=sys-libs/ncurses:0/6[@ABI@]
+LIBS[libtinfo.so.5]=sys-libs/ncurses:5/5[@ABI@,tinfo]
+LIBS[libtinfo.so.6]=sys-libs/ncurses:0/6[@ABI@,tinfo]
 LIBS[libtxc_dxtn.so]=media-libs/libtxc_dxtn[@ABI@]
 LIBS[libudev.so.0]=sys-libs/libudev-compat[@ABI@]
 LIBS[libusb-1.0.so.0]=dev-libs/libusb:1[@ABI@]
@@ -258,6 +258,7 @@ UNBUNDLEABLES=(
 	"Anodyne"
 	"Dwarfs - F2P"
 	"Sid Meier's Civilization V"
+	"Tomb Raider"
 	"Trine 2"
 )
 
