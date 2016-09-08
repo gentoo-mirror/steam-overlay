@@ -7,3 +7,4 @@ games-util/steam-launcher 1.0.0.52-r1: Installer, launcher and supplementary fil
 games-util/steam-meta 0-r20160817: Meta package for Valve's Steam environment
 media-fonts/steamfonts 1: Collection of fonts used by Valve's Steam client
 net-libs/libcurl-debian 4: libcurl-{gnutls,nss}.so. symlinks for compatibility with Debian
+sys-apps/sc-controller 0.2.16.1: User-mode driver and GTK3 based GUI for Steam Controller
