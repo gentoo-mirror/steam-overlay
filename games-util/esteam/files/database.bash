@@ -19,6 +19,7 @@ LIBS[libattr.so.1]=sys-apps/attr[@ABI@]
 LIBS[libavahi-client.so.3]=net-dns/avahi[@ABI@]
 LIBS[libavahi-common.so.3]=net-dns/avahi[@ABI@]
 LIBS[libbz2.so.1]=app-arch/bzip2[@ABI@]
+LIBS[libbz2.so.1.0]=app-arch/bzip2[@ABI@]
 LIBS[libc.so.6]=${GLIBC}[@MULTILIB@]
 LIBS[libcairo.so.2]=x11-libs/cairo[@ABI@]
 LIBS[libcanberra-gtk.so.0]=media-libs/libcanberra[@ABI@,gtk]
@@ -294,9 +295,11 @@ UNBUNDLEABLES=(
 
 # The following should remain bundled:
 
+# dota 2 (VAC)
 # Half-Life (VAC)
 # Half-Life 2 (VAC)
 # Portal (VAC?)
+# rocketleague (unlisted but reportedly uses VAC, no libs anyway)
 
 # The following files will be deleted if found:
 
