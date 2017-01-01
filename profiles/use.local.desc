@@ -11,6 +11,7 @@ games-util/steam-games-meta:s3tc - Pull in library for S3TC compression support
 games-util/steam-games-meta:steamgames_bioshock_infinite - Bioshock Infinite
 games-util/steam-games-meta:steamgames_defenders_quest - Defender's Quest: Valley of the Forgotten
 games-util/steam-games-meta:steamgames_dirt_showdown - Dirt Showdown
+games-util/steam-games-meta:steamgames_dont_starve - Don't Starve
 games-util/steam-games-meta:steamgames_dwarfs - Dwarfs
 games-util/steam-games-meta:steamgames_hammerwatch - Hammerwatch
 games-util/steam-games-meta:steamgames_ironclad_tactics - Ironclad Tactics
