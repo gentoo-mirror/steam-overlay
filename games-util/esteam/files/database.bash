@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -64,8 +64,8 @@ LIBS[libgdk-x11-2.0.so.0]=x11-libs/gtk+:2[@ABI@]
 LIBS[libgdk_pixbuf-2.0.so.0]=x11-libs/gdk-pixbuf[@ABI@]
 LIBS[libgdk_pixbuf_xlib-2.0.so.0]=x11-libs/gdk-pixbuf[@ABI@,X]
 LIBS[libgio-2.0.so.0]=dev-libs/glib:2[@ABI@]
-LIBS[libGLEW.so.1.10]=media-libs/glew:1.10[@ABI@]
-LIBS[libGLEW.so.1.6]=media-libs/glew:1.6[@ABI@]
+LIBS[libGLEW.so.1.10]==media-libs/glew-1.10*[@ABI@]
+LIBS[libGLEW.so.1.6]==media-libs/glew-1.6*[@ABI@]
 LIBS[libglib-2.0.so.0]=dev-libs/glib:2[@ABI@]
 LIBS[libGLU.so.1]=media-libs/glu[@ABI@]
 LIBS[libglut.so.3]=media-libs/freeglut[@ABI@]
@@ -275,9 +275,12 @@ UNBUNDLEABLES=(
 	"Alien Isolation"
 	"Altitude"
 	"Anodyne"
+	"Destination Sol"
 	"Dwarfs - F2P"
+	"Mad Max"
 	"Revenge of the Titans"
 	"Sid Meier's Civilization V"
+	"Skullgirls"
 	"Titan Attacks"
 	"Tomb Raider"
 	"Trine 2"
@@ -286,11 +289,17 @@ UNBUNDLEABLES=(
 # The following lack unbundleable libraries:
 
 # 1001 Spikes
+# Absolute Drift
 # Binaries
+# Gang Beasts
 # Hammerwatch
 # Lovers in a Dangerous Spacetime
 # Octodad Dadliest Catch
+# Oh...Sir! The Insult Simulator
+# PAC-MAN 256
 # Pix the Cat
+# Please, Don’t Touch Anything
+# Screencheat
 # The Talos Principle
 
 # The following should remain bundled:
