@@ -23,6 +23,7 @@ games-util/steam-games-meta:steamgames_portal - Portal
 games-util/steam-games-meta:steamgames_shadow_mordor - Middle earth: Shadow of Mordor
 games-util/steam-games-meta:steamgames_shatter - Sidhe's Shatter
 games-util/steam-games-meta:steamgames_source_engine - Games based on Valve's source engine (CSS,TF2,...)
+games-util/steam-games-meta:steamgames_te120 - Transmissions: Element 120
 games-util/steam-games-meta:steamgames_tf2 - Team Fortress 2
 games-util/steam-games-meta:steamgames_trine2 - Trine 2
 games-util/steam-games-meta:steamgames_unwritten_tales - Dependencies for "The Book of Unwritten Tales: The Critter Chronicles"
