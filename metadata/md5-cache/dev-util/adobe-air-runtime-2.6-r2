@@ -9,5 +9,4 @@ RDEPEND=app-arch/unzip dev-libs/atk[abi_x86_32] dev-libs/glib:2[abi_x86_32] dev-
 RESTRICT=strip mirror
 SLOT=0
 SRC_URI=http://airdownload.adobe.com/air/lin/download/2.6/AdobeAIRSDK.tbz2 -> AdobeAIRSDK-2.6.tbz2
-_eclass_exported_funcs=pkg_postinst:- src_install:-
 _md5_=5d8956df85056752d3e4beb01b45da9c
