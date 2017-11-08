@@ -1,6 +1,6 @@
 dev-libs/steam-runtime-openssl 1.0.1p: OpenSSL for Steam-based games
 dev-util/adobe-air-runtime 2.6-r2: Adobe AIR runtime
-games-util/esteam 0.20170413: Scan Steam libraries to generate and emerge a Portage set
+games-util/esteam 0.20171105: Scan Steam libraries to generate and emerge a Portage set
 games-util/steam-client-meta 0-r20160828 0-r20161126: Meta package for Valve's native Steam client
 games-util/steam-games-meta 0-r20160812: Meta package for Steam games
 games-util/steam-launcher 1.0.0.52-r2 1.0.0.53 1.0.0.54 1.0.0.54-r1 1.0.0.54-r2 1.0.0.54-r3: Installer, launcher and supplementary files for Valve's Steam client
