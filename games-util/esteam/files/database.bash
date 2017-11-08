@@ -279,6 +279,7 @@ UNBUNDLEABLES=(
 	"Dwarfs - F2P"
 	"Mad Max"
 	"Revenge of the Titans"
+	"ShadowOfMordor"
 	"Sid Meier's Civilization V"
 	"Skullgirls"
 	"Titan Attacks"
@@ -301,6 +302,7 @@ UNBUNDLEABLES=(
 # Please, Don’t Touch Anything
 # Screencheat
 # The Talos Principle
+# Tricky Towers
 
 # The following should remain bundled:
 
