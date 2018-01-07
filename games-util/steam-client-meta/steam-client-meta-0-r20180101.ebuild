@@ -14,8 +14,8 @@ HOMEPAGE="http://steampowered.com"
 LICENSE="metapackage"
 
 SLOT="0"
-KEYWORDS=""
-IUSE="flash +pulseaudio steamfonts +steamruntime streaming trayicon video_cards_intel video_cards_nvidia"
+KEYWORDS="~amd64 ~x86"
+IUSE="flash +pulseaudio steamfonts +steamruntime trayicon video_cards_intel video_cards_nvidia"
 
 # This can help to determine the dependencies:
 # find ~/.steam/root/ -exec readelf -d {} + 2>/dev/null | grep Shared | sort -u | fgrep -v -f <(ls -1 ~/.steam/root/ubuntu12_32/)
@@ -82,7 +82,7 @@ RDEPEND="
 			x11-libs/libXtst[abi_x86_32]
 			x11-libs/pango[abi_x86_32]
 
-			streaming? ( x11-libs/libva[abi_x86_32] )
+			x11-libs/libva[abi_x86_32]
 			trayicon? ( dev-libs/libappindicator:2[abi_x86_32] )
 			pulseaudio? ( media-sound/pulseaudio[abi_x86_32,caps] )
 			!pulseaudio? ( media-sound/apulse[abi_x86_32] )
@@ -134,12 +134,6 @@ pkg_postinst() {
 		ewarn "with:"
 		ewarn "# LD_LIBRARY_PATH=/usr/lib32/apulse steam"
 		ewarn ""
-	fi
-
-	if has_version ">=media-libs/mesa-13.0.0[openssl]"; then
-		ewarn "You have installed \">=mesa-13\" with openssl use flag."
-		ewarn "If you are experiencing crashes please rebuild mesa with"
-		ewarn "the nettle use flag enabled."
 	fi
 
 	ewarn "The steam client and the games are not controlled by"
