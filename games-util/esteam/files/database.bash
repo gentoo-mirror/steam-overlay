@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -52,6 +52,9 @@ LIBS[libfltk_cairo.so.1.3]=x11-libs/fltk[@ABI@,cairo]
 LIBS[libfltk_forms.so.1.3]=x11-libs/fltk[@ABI@]
 LIBS[libfltk_gl.so.1.3]=x11-libs/fltk[@ABI@,opengl]
 LIBS[libfltk_images.so.1.3]=x11-libs/fltk[@ABI@]
+LIBS[libfmod.so]=+
+LIBS[libfmodevent.so]=+
+LIBS[libfmodex.so]=+
 LIBS[libfontconfig.so.1]=media-libs/fontconfig:1.0[@ABI@]
 LIBS[libform.so.5]==sys-libs/ncurses-5*:5[@ABI@]
 LIBS[libform.so.6]==sys-libs/ncurses-6*[@ABI@]
@@ -173,11 +176,13 @@ LIBS[libpthread.so.0]=${GLIBC}[@MULTILIB@]
 LIBS[libpulse-simple.so.0]=media-sound/pulseaudio[@ABI@]
 LIBS[libpulse.so.0]=media-sound/pulseaudio[@ABI@]
 LIBS[libroken.so.18]=app-crypt/heimdal[@ABI@]
+LIBS[libresolv.so.2]=${GLIBC}[@MULTILIB@]
 LIBS[librt.so.1]=${GLIBC}[@MULTILIB@]
 LIBS[libsamplerate.so.0]=media-libs/libsamplerate[@ABI@]
 LIBS[libSDL-1.2.so.0]=media-libs/libsdl[@ABI@,joystick,sound,video]
 LIBS[libSDL2-2.0.so.0]=media-libs/libsdl2[@ABI@,haptic,joystick,sound,threads,video]
 LIBS[libSDL2-2.0.7.so]=libSDL2-2.0.so.0
+LIBS[libSDL2-2.0.8.so]=libSDL2-2.0.so.0
 LIBS[libSDL2_image-2.0.so.0]=media-libs/sdl2-image[@ABI@]
 LIBS[libSDL2_image-2.0.1.so]=libSDL2_image-2.0.so.0
 LIBS[libSDL2_mixer-2.0.so.0]=media-libs/sdl2-mixer[@ABI@]
@@ -242,6 +247,7 @@ LIBS[libwayland-client.so.0]=dev-libs/wayland[@ABI@]
 LIBS[libwayland-cursor.so.0]=dev-libs/wayland[@ABI@]
 LIBS[libwayland-egl.so.1]=media-libs/mesa[@ABI@,wayland]
 LIBS[libwind.so.0]=app-crypt/heimdal[@ABI@]
+LIBS[libwine.so.1]=+
 LIBS[libwrap.so.0]=sys-apps/tcp-wrappers[@ABI@]
 LIBS[libX11-xcb.so.1]=x11-libs/libX11[@ABI@]
 LIBS[libX11.so.6]=x11-libs/libX11[@ABI@]
@@ -271,9 +277,6 @@ LIBS[libXxf86vm.so.1]=x11-libs/libXxf86vm[@ABI@]
 LIBS[libz.so.1]=sys-libs/zlib[@ABI@]
 LIBS[vgui.so]=+
 
-# IMPORTANT! Do not include games that are VAC enabled:
-# http://store.steampowered.com/search/?sort_by=Name_ASC&category2=8&os=linux
-
 UNBUNDLEABLES=(
 	"A Boy and His Blob"
 	"Alien Isolation"
@@ -281,9 +284,17 @@ UNBUNDLEABLES=(
 	"Anodyne"
 	"Destination Sol"
 	"Deus Ex Mankind Divided"
+	"dota 2"
+	"Duck Game" # Effective when https://github.com/0x0ade/DuckGame-Linux is applied.
 	"Dwarfs - F2P"
+	"GRID Autosport"
+	"Half-Life 2"
+	"Half-Life"
+	"Life is Strange - Before the Storm" # Will still use bundled SDL2 via SDL_DYNAMIC_API to work around Unity bug. Hopefully will be resolved soon.
 	"Life Is Strange"
 	"Mad Max"
+	"Portal 2"
+	"Portal"
 	"Revenge of the Titans"
 	"Rise of the Tomb Raider"
 	"ShadowOfMordor"
@@ -298,28 +309,41 @@ UNBUNDLEABLES=(
 # The following lack unbundleable libraries:
 
 # 1001 Spikes
+# A Virus Named TOM
 # Absolute Drift
+# Besiege
 # Binaries
+# Bridge Constructor Portal
+# BridgeConstructor
+# Dustforce
+# Epistory
 # Gang Beasts
 # Hammerwatch
+# Hover
+# Human Fall Flat
+# I Hate Running Backwards
+# Letter Quest Remastered
 # Lovers in a Dangerous Spacetime
+# MegabytePunch
+# Metro 2033 Redux
 # Octodad Dadliest Catch
 # Oh...Sir! The Insult Simulator
 # PAC-MAN 256
 # Pix the Cat
 # Please, Don’t Touch Anything
+# Prison Architect
+# Rocket Wars
+# rocketleague
 # Screencheat
+# Serious Sam 3
 # The Talos Principle
 # Tricky Towers
+# Ultimate Chicken Horse
+# Worms Clan Wars
 
 # The following should remain bundled:
 
-# dota 2 (VAC)
 # Grim Fandango Remastered (custom SDL2? other libs are in DELETEABLES)
-# Half-Life (VAC)
-# Half-Life 2 (VAC)
-# Portal (VAC?)
-# rocketleague (unlisted but reportedly uses VAC, no libs anyway)
 
 # The following files will be deleted if found:
 
