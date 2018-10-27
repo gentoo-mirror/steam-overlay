@@ -8,4 +8,4 @@ LICENSE=GPL-2
 RDEPEND=app-eselect/eselect-opengl app-misc/pax-utils sys-apps/gentoo-functions
 SLOT=0
 _eclasses_=prefix	e51c7882b7b721e54e684f7eb143cbfe
-_md5_=0f5591d8e2e1960f132caac86e40d508
+_md5_=b19edbb82a822990aa2d1fe0bfbf5ceb
