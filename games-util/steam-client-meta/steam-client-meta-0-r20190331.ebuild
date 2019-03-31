@@ -1,7 +1,7 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 inherit pax-utils
 
@@ -40,33 +40,25 @@ RDEPEND="
 			)
 
 		!steamruntime? (
-			app-i18n/libthai[abi_x86_32]
 			app-arch/bzip2[abi_x86_32]
 			dev-libs/atk[abi_x86_32]
 			dev-libs/dbus-glib[abi_x86_32]
 			dev-libs/expat[abi_x86_32]
 			dev-libs/glib:2[abi_x86_32]
-			dev-libs/libpcre-debian[abi_x86_32]
-			dev-libs/libgcrypt[abi_x86_32]
 			dev-libs/nspr[abi_x86_32]
 			dev-libs/nss[abi_x86_32]
-			gnome-base/gconf:2[abi_x86_32]
 			media-libs/alsa-lib[abi_x86_32]
-			media-libs/flac[abi_x86_32]
 			media-libs/fontconfig[abi_x86_32]
 			media-libs/freetype[abi_x86_32]
 			media-libs/libpng:1.2[abi_x86_32]
-			media-libs/libvorbis[abi_x86_32]
 			media-libs/openal[abi_x86_32]
 			net-misc/curl[abi_x86_32]
 			net-misc/networkmanager[abi_x86_32]
 			net-print/cups[abi_x86_32]
-			sys-apps/dbus[abi_x86_32]
+			sys-apps/dbus[abi_x86_32,X]
 			sys-libs/libudev-compat[abi_x86_32]
-			sys-libs/libselinux[abi_x86_32]
-			virtual/libgudev[abi_x86_32]
+			sys-libs/zlib[abi_x86_32]
 			virtual/libusb[abi_x86_32]
-			x11-libs/cairo[abi_x86_32]
 			x11-libs/gdk-pixbuf[abi_x86_32]
 			x11-libs/gtk+:2[abi_x86_32,cups]
 			x11-libs/libICE[abi_x86_32]
