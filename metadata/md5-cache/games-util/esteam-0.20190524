@@ -7,5 +7,5 @@ KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
 RDEPEND=app-eselect/eselect-opengl app-misc/pax-utils sys-apps/gentoo-functions
 SLOT=0
-_eclasses_=prefix	e51c7882b7b721e54e684f7eb143cbfe
+_eclasses_=prefix	c2993e4c430c1ee24f278983d6189501
 _md5_=012f9bb7cc6283d94682a6c9ab13e139
