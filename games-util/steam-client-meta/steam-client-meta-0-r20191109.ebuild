@@ -51,7 +51,7 @@ RDEPEND="
 			media-libs/alsa-lib[abi_x86_32]
 			media-libs/fontconfig[abi_x86_32]
 			media-libs/freetype[abi_x86_32]
-			media-libs/libpng:1.2[abi_x86_32]
+			media-libs/libpng-compat:1.2[abi_x86_32]
 			media-libs/openal[abi_x86_32]
 			net-misc/curl[abi_x86_32]
 			net-misc/networkmanager[abi_x86_32]
@@ -64,7 +64,7 @@ RDEPEND="
 			x11-libs/gtk+:2[abi_x86_32,cups]
 			x11-libs/libICE[abi_x86_32]
 			x11-libs/libSM[abi_x86_32]
-			|| ( x11-libs/libva-compat:1[abi_x86_32] =x11-libs/libva-1*[abi_x86_32] )
+			x11-libs/libva-compat:1[abi_x86_32]
 			x11-libs/libvdpau[abi_x86_32]
 			x11-libs/libX11[abi_x86_32]
 			x11-libs/libXScrnSaver[abi_x86_32]
