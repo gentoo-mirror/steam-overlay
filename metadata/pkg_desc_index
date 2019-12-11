@@ -5,6 +5,7 @@ games-util/steam-client-meta 0-r20191109: Meta package for Valve's native Steam 
 games-util/steam-games-meta 0-r20191109: Meta package for Steam games
 games-util/steam-launcher 1.0.0.54-r4 1.0.0.56 1.0.0.59 1.0.0.59-r3: Installer, launcher and supplementary files for Valve's Steam client
 games-util/steam-meta 0-r20160817: Meta package for Valve's Steam environment
+media-fonts/steamfonts 1: Collection of fonts used by Valve's Steam client
 media-libs/hal-flash 0.3.3-r1: libhal stub forwarding to UDisks for Adobe Flash to play DRM content
 net-libs/libcurl-debian 4: libcurl-{gnutls,nss}.so. symlinks for compatibility with Debian
 sys-apps/sc-controller 0.2.16.1: User-mode driver and GTK3 based GUI for Steam Controller
