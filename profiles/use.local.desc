@@ -2,6 +2,7 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+games-util/esteam:libglvnd - Pull in media-libs/libglvnd rather than an eselected driver when requiring libGL.so
 games-util/steam-client-meta:flash - Pull in www-plugins/adobe-flash for the internal browser
 games-util/steam-client-meta:steamfonts - Use official fonts from Valve's steam client
 games-util/steam-client-meta:steamruntime - Use the official steam runtime libraries
