@@ -7,6 +7,7 @@ games-util/steam-client-meta:flash - Pull in www-plugins/adobe-flash for the int
 games-util/steam-client-meta:steamfonts - Use official fonts from Valve's steam client
 games-util/steam-client-meta:steamruntime - Use the official steam runtime libraries
 games-util/steam-client-meta:steamvr - Enable SteamVR virtual reality support
+games-util/steam-client-meta:trayicon - Enable system tray icon with libappindicator
 games-util/steam-games-meta:steamgames_bioshock_infinite - Bioshock Infinite
 games-util/steam-games-meta:steamgames_defenders_quest - Defender's Quest: Valley of the Forgotten
 games-util/steam-games-meta:steamgames_dirt_rally - Dirt Rally
