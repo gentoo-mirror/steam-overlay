@@ -10,6 +10,7 @@ GLIBC=\>=sys-libs/glibc-2.15
 LIBS[ld-linux-x86-64.so.2]=${GLIBC}[@MULTILIB@]
 LIBS[ld-linux.so.2]=${GLIBC}[@MULTILIB@]
 LIBS[libacl.so.1]=sys-apps/acl[@ABI@]
+LIBS[libalut.so.0]=media-libs/freealut[@ABI@]
 LIBS[libappindicator.so.1]=dev-libs/libappindicator:2[@ABI@]
 LIBS[libasn1.so.8]=app-crypt/heimdal[@ABI@]
 LIBS[libasound.so.2]=media-libs/alsa-lib[@ABI@]
@@ -36,6 +37,7 @@ LIBS[libcrypto.so.42]=libcrypto.so.1.0.0
 LIBS[libcups.so.2]=net-print/cups[@ABI@]
 LIBS[libcurl-gnutls.so.4]=net-libs/libcurl-debian:4[@ABI@]
 LIBS[libcurl-nss.so.4]=net-libs/libcurl-debian:4[@ABI@]
+LIBS[libcurl.so.3]=libcurl.so.4
 LIBS[libcurl.so.4]=net-misc/curl[@ABI@]
 LIBS[libdbus-1.so.3]=sys-apps/dbus[@ABI@]
 LIBS[libdbus-glib-1.so.2]=dev-libs/dbus-glib[@ABI@]
@@ -114,7 +116,6 @@ LIBS[libheimntlm.so.0]=app-crypt/heimdal[@ABI@]
 LIBS[libhogweed.so.4]=dev-libs/nettle:0/6.2[@ABI@]
 LIBS[libhx509.so.5]=app-crypt/heimdal[@ABI@]
 LIBS[libICE.so.6]=x11-libs/libICE[@ABI@]
-LIBS[libidn.so.11]=net-dns/libidn:1.33[@ABI@]
 LIBS[libidn.so.12]=net-dns/libidn:0/12[@ABI@]
 LIBS[libindicator.so.7]=dev-libs/libindicator:0[@ABI@]
 LIBS[libjack.so.0]=media-sound/jack2[@ABI@]
@@ -321,6 +322,7 @@ UNBUNDLEABLES=(
 	"dota 2 beta"
 	"dota 2"
 	"Duck Game" # Effective when https://github.com/0x0ade/DuckGame-Linux is applied.
+	"Dustforce"
 	"Dwarfs - F2P"
 	"GRID Autosport"
 	"Half-Life 2"
@@ -329,6 +331,7 @@ UNBUNDLEABLES=(
 	"Life Is Strange"
 	"Mad Max"
 	"Portal 2"
+	"Portal Stories Mel"
 	"Portal"
 	"Revenge of the Titans"
 	"Rise of the Tomb Raider"
@@ -352,7 +355,6 @@ UNBUNDLEABLES=(
 # Binaries
 # Bridge Constructor Portal
 # BridgeConstructor
-# Dustforce
 # Epistory
 # Gang Beasts
 # Hammerwatch
