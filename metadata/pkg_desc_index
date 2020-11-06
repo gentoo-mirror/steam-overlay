@@ -9,4 +9,3 @@ games-util/steam-meta 0-r20160817: Meta package for Valve's Steam environment
 media-fonts/steamfonts 1: Collection of fonts used by Valve's Steam client
 media-libs/hal-flash 0.3.3-r1: libhal stub forwarding to UDisks for Adobe Flash to play DRM content
 net-libs/libcurl-debian 4: libcurl-{gnutls,nss}.so.4 symlinks for compatibility with Debian
-sys-apps/sc-controller 0.2.16.1: User-mode driver and GTK3 based GUI for Steam Controller
