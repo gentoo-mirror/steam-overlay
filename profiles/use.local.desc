@@ -29,3 +29,4 @@ games-util/steam-games-meta:steamgames_witcher2 - The Witcher 2
 games-util/steam-games-meta:steamruntime - Use the official steam runtime libraries
 games-util/steam-launcher:steamruntime - Use the official steam runtime libraries
 games-util/steam-meta:steamruntime - Use the official steam runtime libraries
+net-libs/libnm-glib:nss - Use dev-libs/nss for cryptography
