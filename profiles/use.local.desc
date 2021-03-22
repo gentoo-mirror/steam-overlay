@@ -23,7 +23,6 @@ games-util/steam-games-meta:steamgames_source_engine - Games based on Valve's so
 games-util/steam-games-meta:steamgames_te120 - Transmissions: Element 120
 games-util/steam-games-meta:steamgames_tf2 - Team Fortress 2
 games-util/steam-games-meta:steamgames_trine2 - Trine 2
-games-util/steam-games-meta:steamgames_unwritten_tales - Dependencies for "The Book of Unwritten Tales: The Critter Chronicles"
 games-util/steam-games-meta:steamgames_voidexpanse - VoidExpanse
 games-util/steam-games-meta:steamgames_witcher2 - The Witcher 2
 games-util/steam-games-meta:steamruntime - Use the official steam runtime libraries
