@@ -1,12 +1,13 @@
+BDEPEND=X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
 DEFINED_PHASES=install postinst postrm setup
-DEPEND=X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
 DESCRIPTION=Collection of fonts used by Valve's Steam client
 EAPI=7
 HOMEPAGE=https://support.steampowered.com/kb_article.php?ref=1974-YFKL-4947
+INHERIT=font
 IUSE=X
 KEYWORDS=~amd64 ~x86
 LICENSE=MSttfEULA
 SLOT=0
 SRC_URI=https://support.steampowered.com/downloads/1974-YFKL-4947/SteamFonts.zip
-_eclasses_=font	dd073b36fe3fd8b868c23bc23209db45
+_eclasses_=font	0667878c2b594871023dd1833d05996f
 _md5_=105d4cea0406b02ccdc2c0c6ac7ccb7b
