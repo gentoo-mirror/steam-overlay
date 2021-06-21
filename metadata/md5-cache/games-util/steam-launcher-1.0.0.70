@@ -11,5 +11,5 @@ RDEPEND=app-arch/tar app-shells/bash net-misc/curl || ( >=gnome-extra/zenity-3 x
 RESTRICT=bindist mirror test
 SLOT=0
 SRC_URI=https://repo.steampowered.com/steam/archive/stable/steam_1.0.0.70.tar.gz
-_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	toolchain-funcs	2545dc6f0aaecb2dea61424911e82674	multilib	ba7da83f763a749a2870c28785c6dc0b	linux-info	7e8ed4c6a1d136fb291c52386f996c2c	prefix	a6c7267179fa6e34d4204c1d3e2f01a1	xdg-utils	ff2ff954e6b17929574eee4efc5152ba	xdg	c7ba313ea1eaf266f95cc6235f7d6a07
+_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	toolchain-funcs	7a9551c9a6680454019664620505375a	multilib	6f710a580aea2e8c7f5be70f8912ad43	linux-info	7e8ed4c6a1d136fb291c52386f996c2c	prefix	245bf72183394aa1b43afa1dbc97ab2c	xdg-utils	ff2ff954e6b17929574eee4efc5152ba	xdg	c7ba313ea1eaf266f95cc6235f7d6a07
 _md5_=1875663efe330babfcfbbbca2a406613
