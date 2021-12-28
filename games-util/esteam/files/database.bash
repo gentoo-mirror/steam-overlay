@@ -63,8 +63,8 @@ LIBS[libfmodex.so]=+
 LIBS[libfontconfig.so.1]=media-libs/fontconfig:1.0[@ABI@]
 LIBS[libform.so.5]=sys-libs/ncurses-compat:5[@ABI@]
 LIBS[libform.so.6]==sys-libs/ncurses-6*[@ABI@]
-LIBS[libformw.so.5]=sys-libs/ncurses-compat:5[@ABI@,unicode]
-LIBS[libformw.so.6]==sys-libs/ncurses-6*[@ABI@,unicode]
+LIBS[libformw.so.5]=sys-libs/ncurses-compat:5[@ABI@,unicode\(+\)]
+LIBS[libformw.so.6]==sys-libs/ncurses-6*[@ABI@,unicode\(+\)]
 LIBS[libfreetype.so.6]=media-libs/freetype:2[@ABI@]
 LIBS[libgcc_s.so.1]=${GCC}[@MULTILIB@]
 LIBS[libgconf-2.so.4]=gnome-base/gconf:2[@ABI@]
@@ -139,8 +139,8 @@ LIBS[libm.so.6]=${GLIBC}[@MULTILIB@]
 LIBS[libmad.so.0]=media-libs/libmad[@ABI@]
 LIBS[libmenu.so.5]=sys-libs/ncurses-compat:5[@ABI@]
 LIBS[libmenu.so.6]==sys-libs/ncurses-6*[@ABI@]
-LIBS[libmenuw.so.5]=sys-libs/ncurses-compat:5[@ABI@,unicode]
-LIBS[libmenuw.so.6]==sys-libs/ncurses-6*[@ABI@,unicode]
+LIBS[libmenuw.so.5]=sys-libs/ncurses-compat:5[@ABI@,unicode\(+\)]
+LIBS[libmenuw.so.6]==sys-libs/ncurses-6*[@ABI@,unicode\(+\)]
 LIBS[libmikmod.so.2]=media-libs/libmikmod[@ABI@]
 LIBS[libmikmod.so.3]=media-libs/libmikmod[@ABI@]
 LIBS[libMiles.so]=+
@@ -149,8 +149,8 @@ LIBS[libmp3lame.so.0]=media-sound/lame[@ABI@]
 LIBS[libmpg123.so.0]=media-sound/mpg123[@ABI@]
 LIBS[libncurses.so.5]=sys-libs/ncurses-compat:5[@ABI@]
 LIBS[libncurses.so.6]==sys-libs/ncurses-6*[@ABI@]
-LIBS[libncursesw.so.5]=sys-libs/ncurses-compat:5[@ABI@,unicode]
-LIBS[libncursesw.so.6]==sys-libs/ncurses-6*[@ABI@,unicode]
+LIBS[libncursesw.so.5]=sys-libs/ncurses-compat:5[@ABI@,unicode\(+\)]
+LIBS[libncursesw.so.6]==sys-libs/ncurses-6*[@ABI@,unicode\(+\)]
 LIBS[libnettle.so.6]=dev-libs/nettle-compat:6.2[@ABI@]
 LIBS[libnm-glib.so.4]=net-libs/libnm-glib[@ABI@]
 LIBS[libnm-util.so.2]=net-libs/libnm-glib[@ABI@]
@@ -163,7 +163,6 @@ LIBS[libnuma.so.1]=sys-process/numactl[@ABI@]
 LIBS[libogg.so.0]=media-libs/libogg[@ABI@]
 LIBS[libopenal.so.1]=media-libs/openal[@ABI@]
 LIBS[libOpenAL.so]=libopenal.so.1
-LIBS[libopenjpeg.so.5]=media-libs/openjpeg:0/5[@ABI@]
 LIBS[libopenvr_api.so]=+
 LIBS[libopus.so.0]=media-libs/opus[@ABI@]
 LIBS[liborc-0.4.so.0]=dev-lang/orc[@ABI@]
@@ -172,8 +171,8 @@ LIBS[libout123.so.0]=media-sound/mpg123[@ABI@]
 LIBS[libp11-kit.so.0]=app-crypt/p11-kit[@ABI@]
 LIBS[libpanel.so.5]=sys-libs/ncurses-compat:5[@ABI@]
 LIBS[libpanel.so.6]==sys-libs/ncurses-6*[@ABI@]
-LIBS[libpanelw.so.5]=sys-libs/ncurses-compat:5[@ABI@,unicode]
-LIBS[libpanelw.so.6]==sys-libs/ncurses-6*[@ABI@,unicode]
+LIBS[libpanelw.so.5]=sys-libs/ncurses-compat:5[@ABI@,unicode\(+\)]
+LIBS[libpanelw.so.6]==sys-libs/ncurses-6*[@ABI@,unicode\(+\)]
 LIBS[libpango-1.0.so.0]=x11-libs/pango[@ABI@]
 LIBS[libpangocairo-1.0.so.0]=x11-libs/pango[@ABI@]
 LIBS[libpangoft2-1.0.so.0]=x11-libs/pango[@ABI@]
@@ -205,10 +204,12 @@ LIBS[libroken.so.18]=app-crypt/heimdal[@ABI@]
 LIBS[libresolv.so.2]=${GLIBC}[@MULTILIB@]
 LIBS[librt.so.1]=${GLIBC}[@MULTILIB@]
 LIBS[libsamplerate.so.0]=media-libs/libsamplerate[@ABI@]
-LIBS[libSDL-1.2.so.0]=media-libs/libsdl[@ABI@,joystick,sound,video]
-LIBS[libSDL2-2.0.so.0]=media-libs/libsdl2[@ABI@,haptic,joystick,sound,threads,video]
+LIBS[libSDL-1.2.so.0]=media-libs/libsdl[@ABI@,joystick,opengl,sound,video]
+LIBS[libSDL2.so]=libSDL2-2.0.so.0
+LIBS[libSDL2-2.0.so.0]=media-libs/libsdl2[@ABI@,haptic,joystick,opengl,sound,threads,video]
 LIBS[libSDL2-2.0.7.so]=libSDL2-2.0.so.0
 LIBS[libSDL2-2.0.8.so]=libSDL2-2.0.so.0
+LIBS[libSDL2_image.so]=libSDL2_image-2.0.so.0
 LIBS[libSDL2_image-2.0.so.0]=media-libs/sdl2-image[@ABI@]
 LIBS[libSDL2_image-2.0.1.so]=libSDL2_image-2.0.so.0
 LIBS[libSDL2_mixer-2.0.so.0]=media-libs/sdl2-mixer[@ABI@]
@@ -251,8 +252,6 @@ LIBS[libthread_db.so.1]=${GLIBC}[@MULTILIB@]
 LIBS[libtier0.so]=+
 LIBS[libtier0_s.so]=+
 LIBS[libtier0_srv.so]=+
-LIBS[libtiff.so.3]=media-libs/tiff:3[@ABI@]
-LIBS[libtiff.so.4]=media-libs/tiff:3[@ABI@]
 LIBS[libtiff.so.5]=media-libs/tiff:0[@ABI@]
 LIBS[libtiffxx.so.3]=media-libs/tiff:3[@ABI@,cxx]
 LIBS[libtiffxx.so.4]=media-libs/tiff:3[@ABI@,cxx]
@@ -313,6 +312,7 @@ LIBS[libzvbi.so.0]=media-libs/zvbi[@ABI@]
 LIBS[vgui.so]=+
 
 UNBUNDLEABLES=(
+	"5dchesswithmultiversetimetravel"
 	"A Boy and His Blob"
 	"Alien Isolation"
 	"Altitude"
@@ -343,6 +343,7 @@ UNBUNDLEABLES=(
 	"Titan Attacks"
 	"Tomb Raider"
 	"Trine 2"
+	"Unrailed"
 	"WormsWMD"
 )
 
