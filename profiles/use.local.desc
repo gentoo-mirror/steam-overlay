@@ -7,7 +7,6 @@ games-util/steam-client-meta:steamruntime - Use the official steam runtime libra
 games-util/steam-client-meta:steamvr - Enable SteamVR virtual reality support
 games-util/steam-client-meta:trayicon - Enable system tray icon with libappindicator
 games-util/steam-games-meta:steamgames_bioshock_infinite - Bioshock Infinite
-games-util/steam-games-meta:steamgames_defenders_quest - Defender's Quest: Valley of the Forgotten
 games-util/steam-games-meta:steamgames_dirt_rally - Dirt Rally
 games-util/steam-games-meta:steamgames_dont_starve - Don't Starve
 games-util/steam-games-meta:steamgames_dwarfs - Dwarfs
