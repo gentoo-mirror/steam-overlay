@@ -10,4 +10,4 @@ LICENSE=MSttfEULA
 SLOT=0
 SRC_URI=https://support.steampowered.com/downloads/1974-YFKL-4947/SteamFonts.zip
 _eclasses_=font	0667878c2b594871023dd1833d05996f
-_md5_=105d4cea0406b02ccdc2c0c6ac7ccb7b
+_md5_=d95624e1067c29371ba1cdf93908b458
