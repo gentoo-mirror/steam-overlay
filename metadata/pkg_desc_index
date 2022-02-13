@@ -3,7 +3,7 @@ dev-libs/nettle-compat 3.4.1: Low-level cryptographic library (6.2 ABI)
 games-util/esteam 0.20211230: Scan Steam libraries to generate and emerge a Portage set
 games-util/steam-client-meta 0-r20220212: Meta package for Valve's native Steam client
 games-util/steam-games-meta 0-r20211230: Meta package for Steam games
-games-util/steam-launcher 1.0.0.72 1.0.0.74: Installer, launcher and supplementary files for Valve's Steam client
+games-util/steam-launcher 1.0.0.74-r1: Installer, launcher and supplementary files for Valve's Steam client
 games-util/steam-meta 0-r20160817: Meta package for Valve's Steam environment
 media-libs/jpeg-compat 2.0.6-r800: Accelerated JPEG library (libjpeg.so.8 ABI provided by libjpeg-turbo)
 net-libs/libcurl-debian 4: libcurl-{gnutls,nss}.so.4 symlinks for compatibility with Debian
