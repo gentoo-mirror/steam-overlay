@@ -1,0 +1,10 @@
+DEFINED_PHASES=-
+DESCRIPTION=Meta package for Valve's Steam environment
+EAPI=8
+HOMEPAGE=https://steampowered.com
+IUSE=+steamruntime
+KEYWORDS=~amd64 ~x86
+LICENSE=metapackage
+RDEPEND=games-util/steam-launcher[steamruntime?] games-util/steam-client-meta[steamruntime?] !steamruntime? ( games-util/esteam )
+SLOT=0
+_md5_=aa9d96d7c3102348bada8cbd06b43808
