@@ -12,4 +12,4 @@ RESTRICT=bindist mirror test
 SLOT=0
 SRC_URI=https://repo.steampowered.com/steam/archive/stable/steam_1.0.0.74.tar.gz
 _eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	toolchain-funcs	fd9cde67030b26e479eeadaced488253	multilib	4fbbbc98f236f1b43acd99476bc3cd85	linux-info	dcbf4f67bc38bee48e9d69a4344e8059	prefix	eab3c99d77fe00506c109c8a736186f7	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e	xdg	6024fbc93167fad782e2032933654857
-_md5_=7391714f2183c721ddebdd3b1e3fed88
+_md5_=98d4bab0448d711e8d8bdf64f21f36ef
