@@ -192,7 +192,7 @@ export GENTOO_VM=icedtea-bin-8-x86
 exec "@GENTOO_PORTAGE_EPREFIX@/usr/bin/java" "\${@}"
 EOF
 		else
-			GAME_ATOMS[virtual/jre:1.8]=1
+			GAME_ATOMS[${GAME}]+=virtual/jre:1.8$'\n'
 			cat <<EOF | tee ${BINS} >/dev/null
 #!@GENTOO_PORTAGE_EPREFIX@/bin/sh
 @GENTOO_PORTAGE_EPREFIX@/usr/bin/depend-java-query -s "virtual/jre:1.8" >/dev/null || export GENTOO_VM=\$(@GENTOO_PORTAGE_EPREFIX@/usr/bin/depend-java-query -v "virtual/jre:1.8")
@@ -294,12 +294,19 @@ EOF
 						esac
 
 						if [[ -n ${ATOM} ]]; then
-							if [[ ${ARCH} != x86 && ${EM} = EM_386 ]]; then
-								ATOM=${ATOM//@MULTILIB@/multilib}
-							else
-								ATOM=${ATOM//@MULTILIB@}
+							unset MULTILIB
+
+							if [[ ${EM} = EM_386 ]]; then
+								case "${NEEDED_ATOM}" in
+									"${GLIBC}["*) MULTILIB+=",stack-realign(+)" ;;
+								esac
+
+								if [[ ${ARCH} != x86 ]]; then
+									MULTILIB+=",multilib"
+								fi
 							fi
 
+							ATOM=${ATOM//@MULTILIB@/${MULTILIB#,}}
 							ATOM=${ATOM//\[,/\[}
 							ATOM=${ATOM//,\]/\]}
 							ATOM=${ATOM//\[\]}
