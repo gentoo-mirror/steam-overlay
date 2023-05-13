@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -22,10 +22,6 @@ RDEPEND="
 		app-arch/tar
 		app-shells/bash
 		net-misc/curl
-		|| (
-			>=gnome-extra/zenity-3
-			x11-terms/xterm
-			)
 
 		joystick? (
 			udev? ( games-util/game-device-udev-rules )
@@ -38,7 +34,7 @@ RDEPEND="
 			x11-libs/libXdmcp[abi_x86_32]
 			)
 		!steamruntime? (
-			>=games-util/steam-client-meta-0-r20210608[steamruntime?]
+			>=games-util/steam-client-meta-0-r20230513[steamruntime?]
 			)
 
 		amd64? (
