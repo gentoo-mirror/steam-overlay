@@ -2,10 +2,11 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+games-util/steam-client-meta:desktop-portal - Enable desktop integration, e.g. for file pickers
 games-util/steam-client-meta:dialogs - Support additional dialogs before the client starts
 games-util/steam-client-meta:steamruntime - Use the official steam runtime libraries
 games-util/steam-client-meta:steamvr - Enable SteamVR virtual reality support
-games-util/steam-client-meta:trayicon - Enable system tray icon with libappindicator
+games-util/steam-client-meta:trayicon - Enable system tray icon
 games-util/steam-games-meta:steamgames_bioshock_infinite - Bioshock Infinite
 games-util/steam-games-meta:steamgames_dirt_rally - Dirt Rally
 games-util/steam-games-meta:steamgames_dont_starve - Don't Starve
