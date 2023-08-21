@@ -1,6 +1,6 @@
 DEFINED_PHASES=install postinst
 DESCRIPTION=Scan Steam libraries to generate and emerge a Portage set
-EAPI=7
+EAPI=8
 HOMEPAGE=https://github.com/anyc/steam-overlay
 INHERIT=prefix
 IUSE=+pulseaudio
@@ -9,4 +9,4 @@ LICENSE=GPL-2
 RDEPEND=app-misc/pax-utils sys-apps/gentoo-functions
 SLOT=0
 _eclasses_=prefix	eab3c99d77fe00506c109c8a736186f7
-_md5_=79578889c7d67e6b4f1b333d779a1e44
+_md5_=738a255bb893c4749c371df6503d0e3e

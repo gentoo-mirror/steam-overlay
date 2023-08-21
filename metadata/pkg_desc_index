@@ -1,6 +1,6 @@
 dev-libs/libappindicator 12.10.0-r203: A library to allow applications to export a menu into the Unity Menu bar
 dev-libs/nettle-compat 3.4.1: Low-level cryptographic library (6.2 ABI)
-games-util/esteam 0.20230312: Scan Steam libraries to generate and emerge a Portage set
+games-util/esteam 0.20230821: Scan Steam libraries to generate and emerge a Portage set
 games-util/steam-client-meta 0-r20230821: Meta package for Valve's native Steam client
 games-util/steam-games-meta 0-r20211230: Meta package for Steam games
 games-util/steam-launcher 1.0.0.76-r1: Installer, launcher and supplementary files for Valve's Steam client
