@@ -7,4 +7,4 @@ games-util/steam-meta 0-r20220320: Meta package for Valve's Steam environment
 media-libs/jpeg-compat 2.0.6-r800: Accelerated JPEG library (libjpeg.so.8 ABI provided by libjpeg-turbo)
 net-libs/libcurl-debian 4: libcurl-{gnutls,nss}.so.4 symlinks for compatibility with Debian
 net-libs/libnm-glib 1.18.10: Legacy NetworkManager glib and util libraries
-x11-libs/extest 1.0.1: X11 XTEST Reimplementation for Steam Controller on Wayland
+x11-libs/extest 1.0.2: X11 XTEST Reimplementation for Steam Controller on Wayland
