@@ -9,4 +9,4 @@ LICENSE=GPL-2
 RDEPEND=app-misc/pax-utils sys-apps/gentoo-functions
 SLOT=0
 _eclasses_=prefix	629161311cdf29bf8596fdd036826a2c
-_md5_=738a255bb893c4749c371df6503d0e3e
+_md5_=51d60789e71277f1388ba2b3ea079523
