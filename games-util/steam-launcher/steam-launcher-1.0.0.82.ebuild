@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -14,7 +14,7 @@ SRC_URI="https://repo.steampowered.com/steam/archive/stable/steam_${PV}.tar.gz"
 
 LICENSE="ValveSteamLicense MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
 IUSE="+desktop-portal +dialogs +joystick +pulseaudio +steamruntime steamvr trayicon +udev video_cards_nvidia wayland"
 RESTRICT="bindist mirror test"
 
@@ -60,6 +60,7 @@ RDEPEND="
 		virtual/libusb[abi_x86_32]
 		x11-libs/gdk-pixbuf[abi_x86_32]
 		x11-libs/gtk+:2[abi_x86_32]
+		x11-libs/libdrm[abi_x86_32]
 		x11-libs/libICE[abi_x86_32]
 		x11-libs/libSM[abi_x86_32]
 		x11-libs/libvdpau[abi_x86_32]
@@ -71,6 +72,7 @@ RDEPEND="
 		x11-libs/libXfixes[abi_x86_32]
 		x11-libs/libXi[abi_x86_32]
 		x11-libs/libXinerama[abi_x86_32]
+		x11-libs/libxkbcommon[abi_x86_32]
 		x11-libs/libXrandr[abi_x86_32]
 		x11-libs/libXrender[abi_x86_32]
 		x11-libs/libXScrnSaver[abi_x86_32]
@@ -100,15 +102,8 @@ RDEPEND="
 		) )
 	)
 
-	amd64? (
-		>=sys-devel/gcc-4.6.0[multilib]
-		>=sys-libs/glibc-2.15[multilib]
-	)
-
-	x86? (
-		>=sys-devel/gcc-4.6.0
-		>=sys-libs/glibc-2.15
-	)
+	>=sys-devel/gcc-4.6.0[multilib]
+	>=sys-libs/glibc-2.15[multilib]
 "
 
 S="${WORKDIR}/${PN}"
